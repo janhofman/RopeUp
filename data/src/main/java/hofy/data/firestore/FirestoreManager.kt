@@ -3,6 +3,8 @@ package hofy.data.firestore
 import com.google.firebase.firestore.FirebaseFirestore
 import hofy.data.firestore.model.FbRoute
 import kotlinx.coroutines.tasks.await
+import kotlinx.coroutines.withTimeout
+import java.util.concurrent.TimeoutException
 
 class FirestoreManager(private val firestore: FirebaseFirestore) {
     suspend fun getRoutes(): Result<List<FbRoute>> {
@@ -26,9 +28,11 @@ class FirestoreManager(private val firestore: FirebaseFirestore) {
 
 suspend fun <T : Any> safeFirestoreCall(call: suspend () -> Result<T>): Result<T> {
     return try {
-        call()
+        withTimeout(5000) {
+            call()
+        }
+        Result.failure(TimeoutException())
     } catch (e: Exception) {
-        // An exception was thrown when calling the API so we're converting this to an IOException
         Result.failure(e)
     }
 }
