@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_routes">
+
+    <fragment
+        android:id="@+id/navigation_route_creation"
+        android:name="hofy.ropeup.presentation.ui.creation.route.RouteCreationFragment"
+        android:label="@string/title_route_creation"
+        tools:layout="@layout/fragment_route_creation" />
+
+    <fragment
+        android:id="@+id/navigation_diary"
+        android:name="hofy.ropeup.presentation.ui.main.diary.DiaryFragment"
+        android:label="@string/title_diary"
+        tools:layout="@layout/fragment_diary" />
+
+    <fragment
+        android:id="@+id/navigation_rope_up"
+        android:name="hofy.ropeup.presentation.ui.main.ropeup.RopeUpFragment"
+        android:label="@string/title_rope_up"
+        tools:layout="@layout/fragment_rope_up" />
+
+    <fragment
+        android:id="@+id/navigation_routes"
+        android:name="hofy.ropeup.presentation.ui.main.routes.RoutesFragment"
+        android:label="@string/title_routes"
+        tools:layout="@layout/fragment_routes" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="hofy.ropeup.presentation.ui.main.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="hofy.ropeup.presentation.ui.main.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

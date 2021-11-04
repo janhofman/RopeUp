@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    compileSdk sdk.compileSdk
+
+    defaultConfig {
+        applicationId "hofy.ropeup"
+        minSdk sdk.minSdk
+        targetSdk sdk.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file("keystore/rope_up_debug.jks")
+            storePassword "lpsh72bm"
+            keyAlias "rope_up"
+            keyPassword "lpsh72bm"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility javaConfig.version
+        targetCompatibility javaConfig.version
+    }
+    kotlinOptions {
+        jvmTarget = javaConfig.version
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation project(":data")
+    implementation project(":domain")
+    implementation project(":presentation")
+    implementation appDependencies
+}

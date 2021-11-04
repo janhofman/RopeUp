@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RopeUp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_diary">Diary</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_routes">Routes</string>
+    <string name="title_rope_up">RopeUp</string>
+    <string name="title_route_creation">Create route</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="length">Length</string>
+    <string name="sign_in_with_google">Sign In with Google</string>
+    <string name="create">Create</string>
+    <string name="loading_error">Oops, something is not right ;)</string>
+    <string name="no_data_info">Nothing to be had here :(</string>
+    <string name="length_format">%1$d m</string>
+    <string name="grade">Grade</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "468292473306",
+    "project_id": "ropeup-4d79c",
+    "storage_bucket": "ropeup-4d79c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468292473306:android:86ee7c98382a7cfc9a70e3",
+        "android_client_info": {
+          "package_name": "hofy.ropeup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468292473306-0jqoh81n2bs37jmuonlqc1sgrtk8e79p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hofy.ropeup",
+            "certificate_hash": "58e7e5b1679b4e68e3bf3862fee6bf1aba71e1ef"
+          }
+        },
+        {
+          "client_id": "468292473306-tpu0qthrbvlj1mnfuhtmdkidiraaeo00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDXSFWR_mZrpDkk4B2Pt1BxC70rMw9-ME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468292473306-tpu0qthrbvlj1mnfuhtmdkidiraaeo00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
